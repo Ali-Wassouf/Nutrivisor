@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioButton
+        android:id="@+id/gfemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="22dp"
+        android:text="Female" />
+    <RadioButton
+        android:id="@+id/gmale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/gfemale"
+        android:text="Male" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gmale"
+        android:layout_alignBottom="@+id/gmale"
+        android:layout_alignParentLeft="true"
+        android:text="Gender" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/highttext"
+        android:layout_marginTop="44dp"
+        android:text="Do you Have Purge ?" />
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/highttext"
+        android:layout_marginTop="44dp"
+        android:text="Do you Have Purge ?" />
+
+    <EditText
+        android:id="@+id/Agetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gmale"
+        android:layout_alignRight="@+id/gmale"
+        android:layout_below="@+id/gmale"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Agetext"
+        android:layout_alignBottom="@+id/Agetext"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/Agetext"
+        android:layout_marginTop="16dp"
+        android:text="Weight" />
+
+    <EditText
+        android:id="@+id/weighttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Agetext"
+        android:layout_alignRight="@+id/Agetext"
+        android:layout_alignTop="@+id/textView2"
+        android:ems="10" />
+
+        
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/highttext"
+        android:text="height" />
+
+    <EditText
+        android:id="@+id/highttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weighttext"
+        android:layout_below="@+id/weighttext"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/gfemale"
+        android:ems="10" />
+
+    <RadioButton
+        android:id="@+id/constipationNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/purgeNo"
+        android:layout_below="@+id/purgeNo"
+        android:layout_marginTop="17dp"
+        android:text="No" />
+
+    <RadioButton
+        android:id="@+id/constipationYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/constipationNo"
+        android:layout_alignBottom="@+id/constipationNo"
+        android:layout_alignLeft="@+id/purgeyes"
+        android:text="yes" />
+
+    <RadioButton
+        android:id="@+id/athleteyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/constipationYes"
+        android:layout_below="@+id/constipationYes"
+        android:layout_marginTop="16dp"
+        android:text="yes" />
+
+    <RadioButton
+        android:id="@+id/athleteNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/athleteyes"
+        android:layout_alignBottom="@+id/athleteyes"
+        android:layout_alignLeft="@+id/constipationNo"
+        android:text="No" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Do you have Constipation ?" />
+
+    <RadioButton
+        android:id="@+id/purgeyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_toLeftOf="@+id/purgeNo"
+        android:text="yes" />
+
+    <RadioButton
+        android:id="@+id/purgeNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/purgeyes"
+        android:layout_alignBottom="@+id/purgeyes"
+        android:layout_alignRight="@+id/gfemale"
+        android:text="No" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/athleteyes"
+        android:layout_alignBottom="@+id/athleteyes"
+        android:layout_alignParentLeft="true"
+        android:text="Are you Athlete ?" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/athleteNo"
+        android:layout_below="@+id/athleteyes"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="Show Result!" />
+
+</RelativeLayout>
